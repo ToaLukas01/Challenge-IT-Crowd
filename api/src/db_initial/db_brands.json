@@ -1,0 +1,16 @@
+{
+    "brands": [
+        {
+            "name": "Samsung",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/2560px-Samsung_Logo.svg.png"
+        },
+        {
+            "name": "LG",
+            "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/LG_logo_%282015%29.svg/2560px-LG_logo_%282015%29.svg.png"
+        },
+        {
+            "name": "Red Dragon",
+            "logo_url": "https://logodownload.org/wp-content/uploads/2020/03/redragon-logo-1.png"
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "products": [
+        {
+            "name": "Pantalla Samsung 1350",
+            "descrition": "pantalla marca Samsung modelo 1350 de ultima definicion, lanzamiento en junio 2022",
+            "image": "https://i.blogs.es/f0ffe0/p2050_high/450_1000.jpg",
+            "price": 13500,
+            "brand": "Samsung"
+        },
+        {
+            "name": "Televisor Samsung LED SMART",
+            "descrition": "televisor inteligente Samsung con editor de consiguracion y reconocimiento de voz incluido",
+            "image": "https://images.samsung.com/is/image/samsung/p6pim/latin/un55au9000pxpa/gallery/latin-crystal-uhd-au9000-un55au9000pxpa-417824940?$720_576_PNG$",
+            "price": 200500,
+            "brand": "Samsung"
+        },
+        {
+            "name": "Pantalla Gaming Samsung IQ900",
+            "descrition": "pantalla Samsung modelo gaming de ultima generacion con resolucion de hasta 120FPS",
+            "image": "https://images.samsung.com/is/image/samsung/p6pim/ar/lc49j890dklxzb/gallery/ar-c49j89-lc49j890dklxzb-thumb-530581412?$320_320_PNG$",
+            "price": 95000,
+            "brand": "Samsung"
+        },
+        {
+            "name": "Televisor LG OLED",
+            "descrition": "modelo OLED de televisor LG con de alta calidad con modo cine y 3D incluido",
+            "image": "https://images.start.com.ar/OLED65A1-2.jpg",
+            "price": 82700,
+            "brand": "LG"
+        },
+        {
+            "name": "Parlantes H8 LG",
+            "descrition": "parlantes de sonido LG modelo H8 con modos de sonido discoteca, cine, ambientacion, karaoke",
+            "image": "https://www.enter.co/wp-content/uploads/2016/12/teatro-en-casa-1024x768.jpg",
+            "price": 35650,
+            "brand": "LG"
+        },
+        {
+            "name": "Pantalla LG LED300",
+            "descrition": "Pantalla gaming marca LG modelo LED300 con resolucion de hasta 2080x3800px",
+            "image": "https://www.lg.com/ar/images/monitores/MD06248982/U02_Basic_350_V.jpg",
+            "price": 77890,
+            "brand": "LG"
+        },
+        {
+            "name": "Teclado Gaming Red Dragon",
+            "descrition": "teclado gaming marca Red Dragon con luces LED multicolores incluidas con cambio de velocidad e intencidad",
+            "image": "https://redragon.es/content/uploads/2021/06/Megamenu-Teclados-1500x1182-1.jpg",
+            "price": 2700,
+            "brand": "Red Dragon"
+        },
+        {
+            "name": "Mouse Gaming Red Dragon",
+            "descrition": "mouse gaming marca Red Dragon con luces LED multicolores incluidas con cambio de velocidad e intencidad",
+            "image": "https://redragon.es/content/uploads/2021/06/Megamenu-Ratones-1500x1182-1.jpg",
+            "price": 1800,
+            "brand": "Red Dragon"
+        },
+        {
+            "name": "Audiculares Gaming Red Dragon",
+            "descrition": "audiculares gaming con microfono marca Red Dragon con luces LED multicolores incluidas",
+            "image": "https://redragon.es/content/uploads/2021/06/Megamenu-Audio-1500x1182-1.jpg",
+            "price": 3000,
+            "brand": "Red Dragon"
+        }
+    ]
+}
