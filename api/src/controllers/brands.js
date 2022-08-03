@@ -23,23 +23,16 @@ async function chargeBrands(){
 async function getAllBrands(req, res){
     try {
         chargeBrands();
-        const allBrands = await Brands.findAll({
-          include: {
-            model: Products,
-            attributes: ["id", "name"],
-          },
-        });
+        const allBrands = await Brands.findAll();
+        //   include: {
+        //     model: Products,
+        //     attributes: ["id", "name"],
+        //   },
+        // });
         res.send(allBrands);
       } catch (error) {
         res.status(404).send({ error: error.message });
       }
-    // chargeBrands();
-    // try{
-    //     const allBrands = await Brands.findAll();
-    //     res.json(allBrands);
-    // }catch(error){
-    //     res.status(404).json({ error: error.message });
-    // }
 };
 
 async function postCreateBrand(req, res){

@@ -6,11 +6,11 @@ module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define('brands', {
     id: {
-      type: DataTypes.UUID,
-      defaultValue: DataTypes.UUIDV4,
+      type: DataTypes.INTEGER,
+      //defaultValue: DataTypes.UUIDV4,
       primaryKey: true,
       allowNull: false,
-      //autoIncrement: true,
+      autoIncrement: true,
     },
     name: {
       type: DataTypes.STRING,

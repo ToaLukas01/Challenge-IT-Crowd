@@ -19,7 +19,7 @@ const { chargeBrands,
     postCreateBrand } = require("../controllers/brands");
 
 router.get("/products", getAllProducts);
-router.get("/products:id", getProductsDetail);
+//router.get("/products:id", getProductsDetail);
 router.post("/products", postCreateProducts);
 router.delete("/products", deleteProducts);
 router.put("/products", putProducts);
