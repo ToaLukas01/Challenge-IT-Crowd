@@ -1,13 +1,13 @@
 
 require('dotenv').config();
 const { Op, Products, Brands } = require('../db');
-//const Products = require("../models/Products");
-//const Brands = require("../models/Brands");
+const { chargeBrands } = require("./brands");
 const dbProducts = require("../db_initial/db_products.json");
 
 async function chargeProducts() {
     try {
         dbProducts.products.map(async(product)=>{
+            await chargeBrands();
             const findBrand = await Brands.findOne({ where: { name: product.brand }});
             if(findBrand){
                 return await Products.findOrCreate({
@@ -31,8 +31,8 @@ async function chargeProducts() {
 
 async function getAllProducts(req, res){
     try{
-        chargeProducts();
-        const { id } = req.query;
+        await chargeProducts();
+        const { id } = req.query; //req.query; req.params.id
         const allProducts = await Products.findAll({
             include: {
                 model: Brands,
@@ -55,8 +55,8 @@ async function getAllProducts(req, res){
 };
 
 async function getProductsDetail(req, res){
-    const { id } = req.query;
     try{
+        const { id } = req.params.id;//req.query; req.params.id
         if(id){
             const productID = await Products.findByPk(id);
             if(productID){

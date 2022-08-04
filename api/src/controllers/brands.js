@@ -1,8 +1,6 @@
 
 require('dotenv').config();
 const { Op, Products, Brands } = require('../db');
-//const Brands = require("../models/Brands");
-//const Products = require("../models/Products");
 const dbBrands = require("../db_initial/db_brands.json");
 
 async function chargeBrands(){
@@ -22,7 +20,7 @@ async function chargeBrands(){
 
 async function getAllBrands(req, res){
     try {
-        chargeBrands();
+        await chargeBrands();
         const allBrands = await Brands.findAll();
         //   include: {
         //     model: Products,
@@ -42,7 +40,7 @@ async function postCreateBrand(req, res){
             return res.status(404).send("missing datas")
         } 
         else {
-            chargeBrands();
+            await chargeBrands();
             const newBrand =  await Brands.findOrCreate({
                 where: {
                     name: name,
