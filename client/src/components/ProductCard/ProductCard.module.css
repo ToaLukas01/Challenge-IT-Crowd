@@ -4,6 +4,8 @@
     text-align: center;
     justify-content: space-evenly;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     background-color: rgba(106, 189, 214, 0.1); 
     backdrop-filter: blur(0.3rem); 
     border: solid 0.08rem rgba(135, 165, 173, 0.3);

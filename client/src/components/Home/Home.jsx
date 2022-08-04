@@ -31,7 +31,7 @@ export default function Home (){
     return(<div className={style.background}>
         <h2>Products IT Crowd</h2>
 
-        <Link to="/products" ><button >Add new Product</button></Link>
+        <Link to="/products" ><button className={style.button}>Add new Product</button></Link>
 
         <Paginate
         productsByPage={productsByPage}
@@ -39,6 +39,7 @@ export default function Home (){
         paginate={paginate}
         />
 
+        <div className={style.litlecontainer}>
         <React.Fragment>
             <div className={style.card}>
                 {actualProducts?.map(p => {return(
@@ -50,6 +51,7 @@ export default function Home (){
                 )})}
             </div>
         </React.Fragment>
+        </div>
 
     </div>)
 }

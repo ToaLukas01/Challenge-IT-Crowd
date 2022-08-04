@@ -1,15 +1,74 @@
 
 .background {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    align-items: center;
+
     background-image: url(https://thumbs.dreamstime.com/b/los-cuadrados-de-papel-grises-del-vector-abstracto-las-tejas-mosaico-moda-wallpaper-98356750.jpg);
+    background-size: cover;
+
     /* background-size: 100%; */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0%;
-    background-size: cover;
+    background-size: cover; */
 };
 
 .card {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: flex-start;
   }
+
+.litlecontainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+}
+
+.button{
+    background: linear-gradient(117deg, rgb(83, 146, 155), rgb(73, 120, 126));
+    width: 12vw;
+    height: 1.8rem;
+    color: rgb(200, 245, 241);
+    text-align: center;
+    border-radius: 0.18rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    margin-right: 2.2rem;
+    border: none;
+    margin: 0.8rem;
+    cursor: pointer;
+    margin-top: 5rem;
+    transition: box-shadow 0.25s ease 0s;
+}
+
+.button:hover,
+.button:focus {
+ background: linear-gradient(117deg, rgb(77, 199, 236), rgb(39, 230, 220));
+ box-shadow: 0 0.1rem 0.8rem rgb(57, 223, 238);
+}
+
+.pagination{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+::-webkit-scrollbar{
+    background-color: rgba(67, 88, 85, 0.9);
+    width: 8px;
+    height: 0;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #51adb6;
+    border-radius: 5px;
+}

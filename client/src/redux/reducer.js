@@ -29,13 +29,17 @@ const rootReducer = (state = initialState, action) => {
         };
         
         case "DELETE_PRODUCT": return {
-            ...state
+            ...state,
+            allProducts: state.allProducts.filter(p => p.id !== action.payload)
         };
 
         case "UPDATE_PRODUCT": return {
-            ...state
+            ...state,
+            allProducts: state.allProducts.map((p) => {
+                return p.id === action.payload.id ? action.payload : p;
+              }),
         };
-        
+
         case "GET_BRANDS": return {
             ...state,
             allBrands: action.payload

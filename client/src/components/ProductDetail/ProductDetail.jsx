@@ -15,7 +15,11 @@ export default function RecetasDetail(){
     useEffect(() => {
         dispatch(clearID()); 
         dispatch(getProductID(id))
-    }, [dispatch, id] );  
+    }, [dispatch, id] );
+    
+    function handeDelete(e){
+
+    }
     
     return (<div className={style.container}>
           {productsDetail ?
@@ -25,7 +29,10 @@ export default function RecetasDetail(){
             <img className={style.image} src={productsDetail.image?productsDetail.image : "No hay iamgen"} alt="Imagen NO disponible" width="300px" height="300px"/>
             <div>Price: ${productsDetail.price? productsDetail.price : "No se encontro el precio"}</div>
             <div>Description:{productsDetail.description? productsDetail.description : "No se encontro descripcion"}</div>
-            <Link to="/home"><button className={style.button}>Back to Home</button></Link>
+            <div>
+                <button className={style.delete} onClick={(e)=>handeDelete(e)}>Delete Product</button>
+                <Link to="/home"><button className={style.button}>Back to Home</button></Link>
+            </div>
             </div>
         </div> 
         : <h4>Loading...</h4>}

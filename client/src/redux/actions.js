@@ -52,6 +52,13 @@ export const postProduct = (atributos) => {
     }
 };
 
+export const deleteProduct = (id) => {
+    return {
+        type: DELETE_PRODUCT,
+        payload: id
+    }
+};
+
 export const getBrands = () => {
     return async function (dispatch) {
         try {
