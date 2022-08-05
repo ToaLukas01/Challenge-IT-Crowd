@@ -29,7 +29,7 @@ export default function Home (){
     },[dispatch]);
 
     return(<div className={style.background}>
-        <h2>Products IT Crowd</h2>
+        <div className={style.title}><h2>Products IT Crowd</h2></div>
 
         <Link to="/products" ><button className={style.button}>Add new Product</button></Link>
 

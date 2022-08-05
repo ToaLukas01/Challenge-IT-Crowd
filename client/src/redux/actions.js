@@ -67,14 +67,18 @@ export const deleteProduct = (id) => {
 };
 
 export const getBrands = () => {
+    //console.log("entrando a la accion getBrands")
     return async function (dispatch) {
         try {
-            var brands = await axios.get("http://localhost:3001/brands")
+            //console.log("entro al try")
+            const brands = await axios.get("http://localhost:3001/brands")
+            //console.log("estas son las brands que se trajeron", brands.data)
             return dispatch({
                 type: GET_BRANDS,
                 payload: brands.data
             })
         }catch(err){
+            console.log("entro al catch")
             console.log(err)
         }
     };

@@ -17,6 +17,22 @@
     background-size: cover; */
 };
 
+.container{
+    background-image: url(https://thumbs.dreamstime.com/b/los-cuadrados-de-papel-grises-del-vector-abstracto-las-tejas-mosaico-moda-wallpaper-98356750.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color4);
+}
+
+.title{
+    color: #ccffff;
+}
+
 .card {
     display: flex;
     flex-wrap: wrap;
@@ -41,11 +57,11 @@
     border-radius: 0.18rem;
     margin-bottom: 0.3rem;
     font-size: 0.9rem;
-    margin-right: 2.2rem;
+    /* margin-right: 2.2rem; */
     border: none;
     margin: 0.8rem;
     cursor: pointer;
-    margin-top: 5rem;
+    margin-top: 1rem;
     transition: box-shadow 0.25s ease 0s;
 }
 

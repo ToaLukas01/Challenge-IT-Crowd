@@ -36,6 +36,29 @@
     border-radius: 0.6rem;       
 }
 
+.title{
+    color: #ccffff;
+}
+
+.text{
+    color: #ccffff;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.imageRender{
+    width: 15vw;
+    height: 15vh;
+    object-fit: contain;
+}
+
+.containerBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 4vw;
+}
+
 .button{
     background: linear-gradient(117deg, rgb(83, 146, 155), rgb(73, 120, 126));
     width: 12vw;
@@ -49,7 +72,7 @@
     border: none;
     margin: 0.8rem;
     cursor: pointer;
-    margin-top: 5rem;
+    margin-top: 3rem;
     transition: box-shadow 0.25s ease 0s;
 }
 
@@ -72,7 +95,7 @@
     border: none;
     margin: 0.8rem;
     cursor: pointer;
-    margin-top: 5rem;
+    margin-top: 3rem;
     transition: box-shadow 0.25s ease 0s;
 }
 

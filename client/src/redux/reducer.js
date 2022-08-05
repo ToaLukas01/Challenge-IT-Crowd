@@ -1,10 +1,8 @@
 
 const initialState = {
     allProducts: [],
-    allBrands: [],
-    auxiliarProducts: [],
+    Brands: [],
     productsDetail: [],
-    productDeleted: ""
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -12,7 +10,6 @@ const rootReducer = (state = initialState, action) => {
         case "GET_ALL_PRODUCTS": return {
             ...state,
             allProducts: action.payload,
-            auxiliarProducts: action.payload
         };
         
         case "GET_PRODUCT_ID": return {
@@ -43,7 +40,7 @@ const rootReducer = (state = initialState, action) => {
 
         case "GET_BRANDS": return {
             ...state,
-            allBrands: action.payload
+            Brands: action.payload
         };
 
         case "POST_BRAND": return {

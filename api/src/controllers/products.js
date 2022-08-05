@@ -36,7 +36,7 @@ async function getAllProducts(req, res){
         const allProducts = await Products.findAll({
             include: {
                 model: Brands,
-                attributes: ["name"],
+                attributes: ["name", "logo_url"]
             }
         });
         if(id){

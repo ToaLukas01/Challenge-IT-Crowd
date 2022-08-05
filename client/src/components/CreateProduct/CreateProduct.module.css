@@ -1,0 +1,220 @@
+
+.container{
+    background-image: url(https://thumbs.dreamstime.com/b/los-cuadrados-de-papel-grises-del-vector-abstracto-las-tejas-mosaico-moda-wallpaper-98356750.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color4);
+}
+
+.containerDescription{
+    height: 8rem;
+    margin-top: 1rem;
+}
+.description{
+    font-family: var(--fontpage);
+    overflow: scroll;
+    resize: none;
+    font-size: 14px;
+    color: var(--color2);
+    margin-bottom: 2vw; 
+    background-color: #b2f1e9;
+    width: 50%;
+    height:100%;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 1rem;        
+}
+
+.description::placeholder{
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.card{
+    background-color: rgba(128, 182, 189, 0.1); 
+    backdrop-filter: blur(5px); 
+    border: solid 1px rgba(158, 203, 209, 0.3);
+    box-shadow:  5px 5px 14px rgba(0, 0, 0, 0.32);
+    width: 40vw;
+    height: auto;
+    margin: 30px;
+    text-align: center;
+    border-radius: 5px;
+    overflow: auto;
+    padding-bottom: 3vh;
+}
+
+.inputText{
+    width:50%;
+    background-color: #abe2e7;
+    display: flex;
+    margin-left: 9rem;
+    justify-content: center;
+    color: var(--color2);
+    border-radius: 5px;
+    height: 30px;
+    font-size: 15px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.inputText::placeholder{
+    font-size: 15px;
+    text-align: center;
+    color: var(--color2);
+}
+
+.error{
+    width:50%;
+    background-color: #dbdada;
+    color: red;
+    display: flex;
+    margin-left: 9rem;
+    justify-content: center;
+    color: var(--color2);
+    border-radius: 5px;
+    height: 30px;
+    font-size: 15px;
+    margin-bottom: 1rem;
+    border-color: red;
+}
+.error::placeholder{
+    font-size: 15px;
+    text-align: center;
+    color: red
+}
+
+.filter{
+    display: flex;
+    justify-content: center;
+}
+
+.optionBrand{
+    /* background-color: var(--color3); */
+    background-color: #1221247e;
+}
+
+.optionBrandBase{
+    /* background-color: var(--color3); */
+    background-color: #241212d5;
+}
+
+.containerBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 4vw;
+}
+
+.select{
+    color: #ccffff;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.title{
+    color: #ccffff;
+}
+
+.imageRender{
+    width: 15vw;
+    height: 15vh;
+    object-fit: contain;
+}
+
+.buttonBrand{
+    background: linear-gradient(117deg, rgb(83, 146, 155), rgb(73, 120, 126));
+    width: 12vw;
+    height: 1.8rem;
+    color: rgb(200, 245, 241);
+    text-align: center;
+    border-radius: 0.18rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    /* margin-right: 2.2rem; */
+    border: none;
+    margin: 0.8rem;
+    cursor: pointer;
+    /* margin-top: 5rem; */
+    transition: box-shadow 0.25s ease 0s;
+}
+
+.buttonBrand:hover,
+.buttonBrand:focus {
+ background: linear-gradient(117deg, rgb(77, 199, 236), rgb(39, 230, 220));
+ box-shadow: 0 0.1rem 0.8rem rgb(57, 223, 238);
+}
+
+.buttonNewBrand{
+    background: linear-gradient(117deg, rgb(84, 180, 175), rgb(73, 138, 132));
+    width: 12vw;
+    height: 1.8rem;
+    color: rgb(200, 245, 241);
+    text-align: center;
+    border-radius: 0.18rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    /* margin-right: 2.2rem; */
+    border: none;
+    margin: 0.8rem;
+    cursor: pointer;
+    /* margin-top: 5rem; */
+    transition: box-shadow 0.25s ease 0s;
+}
+
+.buttonNewBrand:hover,
+.buttonNewBrand:focus {
+ background: linear-gradient(117deg, rgb(77, 236, 228), rgb(39, 230, 205));
+ box-shadow: 0 0.1rem 0.8rem rgb(57, 238, 238);
+}
+
+.buttonSubmit{
+    background: linear-gradient(117deg, rgba(48, 102, 99, 0.424), rgba(40, 88, 83, 0.794));
+    width: 12vw;
+    height: 1.8rem;
+    color: rgb(200, 245, 241);
+    text-align: center;
+    border-radius: 0.18rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    /* margin-right: 2.2rem; */
+    border: none;
+    margin: 0.8rem;
+    cursor: pointer;
+    margin-top: 3rem;
+    transition: box-shadow 0.25s ease 0s;
+}
+
+.buttonSubmit:hover,
+.buttonSubmit:focus {
+ background: linear-gradient(117deg, rgb(77, 236, 188), rgb(32, 255, 225));
+ box-shadow: 0 0.1rem 0.8rem rgb(57, 238, 214);
+}
+
+.buttonHome{
+    background: linear-gradient(117deg, rgb(83, 146, 155), rgb(73, 120, 126));
+    width: 12vw;
+    height: 1.8rem;
+    color: rgb(200, 245, 241);
+    text-align: center;
+    border-radius: 0.18rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    /* margin-right: 2.2rem; */
+    border: none;
+    margin: 0.8rem;
+    cursor: pointer;
+    margin-top: 3rem;
+    transition: box-shadow 0.25s ease 0s;
+}
+
+.buttonHome:hover,
+.buttonHome:focus {
+ background: linear-gradient(117deg, rgb(77, 199, 236), rgb(39, 230, 220));
+ box-shadow: 0 0.1rem 0.8rem rgb(57, 223, 238);
+}
