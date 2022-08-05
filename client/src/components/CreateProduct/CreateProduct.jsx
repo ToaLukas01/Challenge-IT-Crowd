@@ -34,15 +34,36 @@ export default function CreateProduc(){
     },[dispatch]);
     console.log("BRANDS:",allBrands)
 
-    async function handelProduct(e){
+    const handelProduct = async(e) => {
         if(e.target.name === "price"){
             setProduct({
                 ...product,
-                price: Number(e.target.vale)
+                [e.target.name]: Number(e.target.value)
             })
             return
-        };
-        await setProduct({
+        }
+        if(e.target.name === "name"){
+            setProduct({
+                ...product,
+                [e.target.name]: (e.target.value)
+            })
+            return
+        }
+        if(e.target.name === "description"){
+            setProduct({
+                ...product,
+                [e.target.name]: (e.target.value)
+            })
+            return
+        }
+        if(e.target.name === "brandId"){
+            setProduct({
+                ...product,
+                [e.target.name]: (e.target.value)
+            })
+            return
+        }
+        setProduct({
             ...product,
             [e.target.name]: e.target.vale
         });
@@ -259,8 +280,7 @@ export default function CreateProduc(){
                         onChange={handelProduct} 
                         type="text"
                         className={errors.description?.length> 0 ? style.error : style.description}  //className={style.description} 
-                        placeholder={errors.description?.length> 0 ? errors.description : "Product description"}   
-                    /> 
+                        placeholder={errors.description?.length> 0 ? errors.description : "Product description"} /> 
                 </div>
 
                 {/* BUTTONS */}
