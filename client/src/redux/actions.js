@@ -53,10 +53,17 @@ export const postProduct = (atributos) => {
 };
 
 export const deleteProduct = (id) => {
-    return {
-        type: DELETE_PRODUCT,
-        payload: id
-    }
+    return async function (dispatch) {
+        try {
+            await axios.delete(`http://localhost:3001/products?id=${id}`);
+            return dispatch({
+                type: DELETE_PRODUCT,
+                payload: id
+            })
+        }catch(err){
+            console.log(err)
+        }
+    };
 };
 
 export const getBrands = () => {

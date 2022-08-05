@@ -31,7 +31,7 @@ async function chargeProducts() {
 
 async function getAllProducts(req, res){
     try{
-        await chargeProducts();
+        //await chargeProducts();
         const { id } = req.query; //req.query; req.params.id
         const allProducts = await Products.findAll({
             include: {
@@ -77,7 +77,7 @@ async function postCreateProducts(req, res){
     try{
         const { name, description, image, price, brandId } = req.body;
         if(!name || !description || !image || !price || !brandId){ 
-            console.log("ESTOS SON LOS DATOS QUE LLEGARON: name:",name,"descrpcion",description, "image",image, "price",price, "brand",brandId)
+            //console.log("ESTOS SON LOS DATOS QUE LLEGARON: name:",name,"descrpcion",description, "image",image, "price",price, "brand",brandId)
             return res.status(404).send("missing important datas");
         } 
         else {
