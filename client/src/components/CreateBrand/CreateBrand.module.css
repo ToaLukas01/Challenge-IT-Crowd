@@ -1,0 +1,75 @@
+
+.error{
+    width:50%;
+    background-color: #dbdada;
+    color: red;
+    display: flex;
+    margin-left: 9rem;
+    justify-content: center;
+    color: var(--color2);
+    border-radius: 5px;
+    height: 30px;
+    font-size: 15px;
+    margin-bottom: 1rem;
+    border-color: red;
+}
+.error::placeholder{
+    font-size: 15px;
+    text-align: center;
+    color: red
+}
+
+.inputText{
+    width:50%;
+    background-color: #abe2e7;
+    display: flex;
+    margin-left: 9rem;
+    justify-content: center;
+    color: var(--color2);
+    border-radius: 5px;
+    height: 30px;
+    font-size: 15px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.inputText::placeholder{
+    font-size: 15px;
+    text-align: center;
+    color: var(--color2);
+}
+
+.select{
+    color: #ccffff;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.imageRender{
+    width: 15vw;
+    height: 15vh;
+    object-fit: contain;
+}
+
+.buttonSubmit{
+    background: linear-gradient(117deg, rgba(48, 102, 99, 0.424), rgba(40, 88, 83, 0.794));
+    width: 12vw;
+    height: 1.8rem;
+    color: rgb(200, 245, 241);
+    text-align: center;
+    border-radius: 0.18rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    /* margin-right: 2.2rem; */
+    border: none;
+    margin: 0.8rem;
+    cursor: pointer;
+    margin-top: 3rem;
+    transition: box-shadow 0.25s ease 0s;
+}
+
+.buttonSubmit:hover,
+.buttonSubmit:focus {
+ background: linear-gradient(117deg, rgb(77, 236, 188), rgb(32, 255, 225));
+ box-shadow: 0 0.1rem 0.8rem rgb(57, 238, 214);
+}
