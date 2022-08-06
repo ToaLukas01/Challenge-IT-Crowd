@@ -36,6 +36,21 @@
     border-radius: 0.6rem;       
 }
 
+.modaldetail{
+    align-self: center;
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(87, 184, 214, 0.1); 
+    backdrop-filter: blur(0.3rem); 
+    border: solid 0.06rem rgba(76, 116, 143, 0.3);
+    box-shadow:  0.3rem 0.3rem 0.9rem rgba(24, 39, 47, 0.32);
+    border-radius: 0.6rem;      
+}
+
 .title{
     color: #ccffff;
 }
@@ -72,7 +87,7 @@
     border: none;
     margin: 0.8rem;
     cursor: pointer;
-    margin-top: 3rem;
+    margin-top: 1rem;
     transition: box-shadow 0.25s ease 0s;
 }
 
@@ -105,6 +120,29 @@
  box-shadow: 0 0.1rem 0.8rem rgb(238, 57, 57);
 }
 
+.update{
+    background: linear-gradient(117deg, rgba(127, 155, 83, 0.931), rgba(90, 126, 73, 0.801));
+    width: 12vw;
+    height: 1.8rem;
+    color: rgb(200, 245, 241);
+    text-align: center;
+    border-radius: 0.18rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    margin-right: 2.2rem;
+    border: none;
+    margin: 0.8rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: box-shadow 0.25s ease 0s;
+}
+
+.update:hover,
+.update:focus {
+ background: linear-gradient(117deg, rgba(162, 236, 77, 0.842), rgba(84, 230, 39, 0.842));
+ box-shadow: 0 0.1rem 0.8rem rgba(129, 238, 57, 0.733);
+}
+
 .image{
     width: 30vw;
     height: 12.4rem;
@@ -112,4 +150,58 @@
     border-radius: 0.6rem;
     box-shadow:  0.3rem 0.3rem 0.9rem rgba(17, 21, 22, 0.32);
     border: solid 0.06rem rgba(113, 121, 122, 0.3);
+}
+
+.containerBtn{
+    align-items: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 4vw;
+}
+
+.buttonUpdate{
+    background: linear-gradient(117deg, rgb(84, 180, 175), rgb(73, 138, 132));
+    width: 12vw;
+    height: 1.8rem;
+    color: rgb(200, 245, 241);
+    text-align: center;
+    border-radius: 0.18rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    margin-right: 2.2rem;
+    border: none;
+    margin: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: box-shadow 0.25s ease 0s;
+}
+
+.buttonUpdate:hover,
+.buttonUpdate:focus {
+ background: linear-gradient(117deg, rgb(77, 236, 228), rgb(39, 230, 205));
+ box-shadow: 0 0.1rem 0.8rem rgb(57, 238, 238);
+}
+
+.cancel{
+    background: linear-gradient(117deg, rgb(133, 109, 90), rgb(85, 70, 60));
+    width: 12vw;
+    height: 1.8rem;
+    color: rgb(200, 245, 241);
+    text-align: center;
+    border-radius: 0.18rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    margin-right: 2.2rem;
+    border: none;
+    margin: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: box-shadow 0.25s ease 0s;
+}
+
+.cancel:hover,
+.cancel:focus {
+ background: linear-gradient(117deg, rgb(236, 109, 77), rgb(230, 77, 39));
+ box-shadow: 0 0.1rem 0.8rem rgb(238, 78, 57);
 }

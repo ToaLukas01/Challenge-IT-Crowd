@@ -66,6 +66,20 @@ export const deleteProduct = (id) => {
     };
 };
 
+export function putEditProduct(value) {
+    return async function (dispatch) {
+      try {
+        const data = await axios.put('http://localhost:3001/products', value);
+        return dispatch({
+            type: "UPDATE_PRODUCT",
+            payload: data.data,
+        });
+      } catch (error) {
+        console.log(error);
+      }
+    };
+}
+
 export const getBrands = () => {
     //console.log("entrando a la accion getBrands")
     return async function (dispatch) {
