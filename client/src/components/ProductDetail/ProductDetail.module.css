@@ -80,6 +80,13 @@
     object-fit: contain;
 }
 
+.logoRender{
+    margin-top: 1rem;
+    width: 10vw;
+    height: 10vh;
+    object-fit: contain;
+}
+
 .containerBtn{
     display: flex;
     flex-direction: row;

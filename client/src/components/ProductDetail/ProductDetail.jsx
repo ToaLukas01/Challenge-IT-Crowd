@@ -100,7 +100,7 @@ export default function RecetasDetail(){
             setUpdate({
                 ...update,
                 id: productsDetail.id,
-                [e.target.name]: (e.target.value) ? (e.target.value) : productsDetail.brandId
+                [e.target.name]: Number(e.target.value) ? Number(e.target.value) : productsDetail.brandId
             })
             return
         }
@@ -182,14 +182,11 @@ export default function RecetasDetail(){
             <br />
 
             <div className={style.filter}>
-                <select name="brandId" onChange={handelUpdate} value={update.brandId && update.brandId} className={style.buttonBrand}>
-                    {allBrands.map(b =>(<option className={style.optionBrand} selected={b.id === update.brandId ? "true" : "false"} key={b.id} value={b.name}>{b.name}</option>))}
+                <p className={style.title}>Brand</p>
+                <select name="brandId" onChange={handelUpdate} selected={update.brandId} className={style.buttonBrand}>
+                    {allBrands.map(b =>(<option className={style.optionBrand} selected={b.id === update.brandId ? "true" : "false"} key={b.id} value={b.id}>{b.name}</option>))}
                 </select>
-                <button 
-                    type="button" 
-                    onClick={()=>setActiveBrand(!activeBrand)}
-                    className={style.buttonNewBrand}
-                    >Add new brand</button>
+                <button type="button" onClick={()=>setActiveBrand(!activeBrand)}className={style.buttonNewBrand}>Add new brand</button>
             </div>
             <div>{activeBrand ? <CreateBrand/>:null}</div>
             <br />
@@ -213,11 +210,10 @@ export default function RecetasDetail(){
             <div className={style.text}>Price: ${productsDetail.price? productsDetail.price : "No se encontro el precio"}</div>
             <div className={style.text}>Description:{productsDetail.description? productsDetail.description : "No se encontro descripcion"}</div>
             
-            {/* <div>Marca: {productsDetail.brandId}</div> */}
-            {/* <div>
-                <div className={style.title}><h4>{findBrand.name}</h4></div>
-                <div><img className={style.imageRender} src={findBrand.logo_url}/></div>
-            </div> */}
+            <div>{findBrand ? <div>
+            <div className={style.title}>Brand: {findBrand.name}</div>
+            <img className={style.logoRender} src={findBrand.logo_url ? findBrand.logo_url : "NO LOGO"} alt="NO LOGO"/>
+            </div> : null}</div>
             
             <div>
                 <button className={style.delete} onClick={handeDelete}>Delete Product</button>
