@@ -1,7 +1,4 @@
 
-#� �C�h�a�l�l�e�n�g�e�-�I�T�-�C�r�o�w�d�
-�
-�
 Challenge IT Crowd Products
 
 README EN ESPAÑOL
